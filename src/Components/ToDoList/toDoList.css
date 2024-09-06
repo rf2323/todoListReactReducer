@@ -1,0 +1,93 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  width: 20%;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
+}
+
+.task {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.task h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.taskBtns {
+  display: flex;
+  gap: 10px;
+}
+
+.taskBtns button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.taskBtns button:hover {
+  color: #ffcccb;
+}
+
+.task.completed {
+  background-color: #28a745;
+  text-decoration: line-through;
+  color: white;
+}
